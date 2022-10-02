@@ -1,72 +1,78 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0;
+body {
+  background-color: mediumspringgreen;
+  margin: 0;
 }
 
-header{
-    height: 15vh;
-    border: 2px solid red;
+header {
+  background-color: burlywood;
+  height: 15vh;
+  border: 2px solid black;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
-main{
-    display: grid;
-    grid-template-rows: 1fr 6fr;
-    height: 85vh;
-    border: 2px solid purple;
+main {
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  height: 85vh;
+  border: 2px solid purple;
 }
 
 .questions {
-    border: 3px solid greenyellow;
-    text-align: center;
+  border: 3px solid greenyellow;
+  text-align: center;
 }
 
-.scoreboard{
-    display: grid;
-    align-items: center;
-    border: 2px solid blue;
+.scoreboard {
+  background-color: antiquewhite;
+  display: grid;
+  align-items: center;
+  border: 2px solid blue;
 }
 
-.scoreboard p{
-text-align: center;
-}
-#question{
-text-align: center;
-border: 2px solid brown;
+.scoreboard p {
+  text-align: center;
 }
 
-#answers{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 60%;
-    border: 2px solid magenta;
+#question {
+  text-align: center;
+  border: 2px solid brown;
+  background-color: whitesmoke;
 }
-#answers div{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid orangered;
+
+#answers {
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 60%;
+  border: 2px solid magenta;
+}
+#answers div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid orangered;
 }
 
 #answers div:hover {
-    background-color: aqua;
-    color: blueviolet;
-    cursor: pointer;
+  background-color: aqua;
+  color: blueviolet;
+  cursor: pointer;
 }
-button{
-    text-align: center;
+button {
+  text-align: center;
 }
 
-@media (min-width: 768px){
-    main {
-        grid-template-columns: 1fr 3fr;
-        grid-template-rows: 1fr;
-    }
+@media (min-width: 768px) {
+  main {
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+  }
 }
